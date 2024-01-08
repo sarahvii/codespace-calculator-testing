@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>CodeSpace - Calculator</title>
+</head>
+<body>
+    <h1 style="text-align: center">CodeSpace Calculator</h1>
+    <div class="container">
+    <!-- Display -->
+    <table>
+        <tr>
+            <td colspan="3">
+                <input type='text' id='display' class='display' style="text-align: right;">
+            </td>
+            <td>
+                <input type='button' value = 'C' onclick="clearDisplay()" class="clear"/>
+            </td>
+        </tr>
+    </table>
+    <!-- Keys -->
+    <div class="keys">
+        <button class="number" onClick="appendToDisplay('7')">7</button>
+        <button class="number" onClick="appendToDisplay('8')">8</button>
+        <button class="number" onClick="appendToDisplay('9')">9</button>
+        <button class="operator" onClick="appendToDisplay('/')">/</button>
+        <button class="number" onClick="appendToDisplay('4')">4</button>
+        <button class="number" onClick="appendToDisplay('5')">5</button>
+        <button class="number" onClick="appendToDisplay('6')">6</button>
+        <button class="operator" onClick="appendToDisplay('*')">*</button>
+        <button class="number" onClick="appendToDisplay('1')">1</button>
+        <button class="number" onClick="appendToDisplay('2')">2</button>
+        <button class="number" onClick="appendToDisplay('3')">3</button>
+        <button class="operator" onClick="appendToDisplay('-')">-</button>
+        <button class="number" onClick="appendToDisplay('0')">0</button>
+        <button class="operator" onClick="appendToDisplay('.')">.</button>
+        <button class="calculate" onClick="calculate()">=</button>
+        <button class="operator" onClick="appendToDisplay('+')">+</button>
+    </div>
+    <!-- Calculation -->
+
+
+    </div>  
+
+<script src="calculator.js"></script>    
+</body>
+</html>
