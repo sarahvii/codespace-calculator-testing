@@ -10,8 +10,7 @@ it('can add two integers together', ()=>{
   cy.get('#add').click();
   cy.get('#2').click();
   cy.get('#equals').click();
-  cy.contains('#display', 3)
- 
+  cy.get('#display').should('have.value', 3)
 })
 
 it('can multiply two integers together', ()=>{
@@ -20,6 +19,6 @@ it('can multiply two integers together', ()=>{
   cy.get('#multiply').click();
   cy.get('#4').click();
   cy.get('#equals').click();
-  cy.contains('#display', 8)
+  cy.get('#display').should('have.value', 8)
  
 })
